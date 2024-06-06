@@ -9,5 +9,5 @@ set(SRC_DIR "${CMAKE_CURRENT_LIST_DIR}/src/")
 find_package(Curses REQUIRED)
 include_directories(${CURSES_INCLUDE_DIR})
 
-add_executable(main "${SRC_DIR}/main.cpp")
-target_link_libraries(main ${CURSES_LIBRARIES})
+add_executable(hello "${SRC_DIR}/hello.cpp")
+target_link_libraries(hello ${CURSES_LIBRARIES})
