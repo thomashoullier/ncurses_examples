@@ -11,3 +11,9 @@ include_directories(${CURSES_INCLUDE_DIR})
 
 add_executable(hello "${SRC_DIR}/hello.cpp")
 target_link_libraries(hello ${CURSES_LIBRARIES})
+
+add_executable(example_2 "${SRC_DIR}/example_2.cpp")
+target_link_libraries(example_2 ${CURSES_LIBRARIES})
+
+add_executable(example_3 "${SRC_DIR}/example_3.cpp")
+target_link_libraries(example_3 ${CURSES_LIBRARIES})
