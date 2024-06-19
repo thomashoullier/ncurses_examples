@@ -8,6 +8,7 @@ set(SRC_DIR "${CMAKE_CURRENT_LIST_DIR}/src/")
 
 find_package(Curses REQUIRED)
 include_directories(${CURSES_INCLUDE_DIR})
+find_library(PANEL_LIBRARY panel)
 
 add_executable(hello "${SRC_DIR}/hello.cpp")
 target_link_libraries(hello ${CURSES_LIBRARIES})
@@ -47,3 +48,6 @@ target_link_libraries(example_12 ${CURSES_LIBRARIES})
 
 add_executable(example_13 "${SRC_DIR}/example_13.cpp")
 target_link_libraries(example_13 ${CURSES_LIBRARIES})
+
+add_executable(example_14 "${SRC_DIR}/example_14.cpp")
+target_link_libraries(example_14 ${CURSES_LIBRARIES} ${PANEL_LIBRARY})
