@@ -1,9 +1,9 @@
 # ncurses example
-We build a small ncurses example in C++.
+We run the ncurses examples from the following manual,
 
-[1] bookmark: 4.7 not included.
+NCURSES Programming HOWTO (http://www.ibiblio.org/pub/Linux/docs/HOWTO/other-formats/pdf/NCURSES-Programming-HOWTO.pdf)
+
+We made small tweaks to adapt some of the examples to C++, and correct
+obvious mistakes.
 
 Note the complete API is documented in the ncurses man pages.
-
-## References
-1. NCURSES Programming HOWTO (http://www.ibiblio.org/pub/Linux/docs/HOWTO/other-formats/pdf/NCURSES-Programming-HOWTO.pdf)
