@@ -86,3 +86,6 @@ target_link_libraries(example_24 ${CURSES_LIBRARIES} ${MENU_LIBRARY})
 
 add_executable(example_25 "${SRC_DIR}/example_25.cpp")
 target_link_libraries(example_25 ${CURSES_LIBRARIES} ${FORM_LIBRARY})
+
+add_executable(example_26 "${SRC_DIR}/example_26.cpp")
+target_link_libraries(example_26 ${CURSES_LIBRARIES} ${FORM_LIBRARY})
