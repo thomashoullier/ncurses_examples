@@ -10,6 +10,7 @@ find_package(Curses REQUIRED)
 include_directories(${CURSES_INCLUDE_DIR})
 find_library(PANEL_LIBRARY panel)
 find_library(MENU_LIBRARY menu)
+find_library(FORM_LIBRARY form)
 
 add_executable(hello "${SRC_DIR}/hello.cpp")
 target_link_libraries(hello ${CURSES_LIBRARIES})
@@ -82,3 +83,6 @@ target_link_libraries(example_23 ${CURSES_LIBRARIES} ${MENU_LIBRARY})
 
 add_executable(example_24 "${SRC_DIR}/example_24.cpp")
 target_link_libraries(example_24 ${CURSES_LIBRARIES} ${MENU_LIBRARY})
+
+add_executable(example_25 "${SRC_DIR}/example_25.cpp")
+target_link_libraries(example_25 ${CURSES_LIBRARIES} ${FORM_LIBRARY})
